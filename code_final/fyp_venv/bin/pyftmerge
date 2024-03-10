@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/nicholaskheng/Desktop/folder/sim/cs 2021/Y3S2/final year project/project/code_v2/fyp_venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from fontTools.merge import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
